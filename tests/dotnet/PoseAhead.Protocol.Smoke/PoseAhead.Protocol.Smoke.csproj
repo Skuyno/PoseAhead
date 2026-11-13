@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="..\..\..\unity\PoseAheadAvatar\Assets\PoseAhead\Scripts\Transport\*.cs" />
+    <Compile Include="..\..\..\unity\PoseAheadAvatar\Assets\PoseAhead\Scripts\Retargeting\*.cs" />
+    <Compile Include="..\..\..\unity\PoseAheadAvatar\Assets\PoseAhead\Scripts\Diagnostics\*.cs" />
+    <Compile Include="UnityStubs.cs" />
+    <Compile Include="ReceiverTests.cs" />
+    <Compile Include="DecoderTests.cs" />
+    <Compile Include="RootTranslationTests.cs" />
+    <Compile Include="RetargetTests.cs" />
+    <Compile Include="FrameRateTests.cs" />
+    <None Include="..\..\fixtures\udp_v2_golden.base64"
+          Link="udp_v2_golden.base64"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\fixtures\udp_v2_full_golden.base64"
+          Link="udp_v2_full_golden.base64"
+          CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

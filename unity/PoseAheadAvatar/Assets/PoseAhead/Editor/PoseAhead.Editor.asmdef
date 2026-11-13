@@ -1,0 +1,6 @@
+{
+  "name": "PoseAhead.Editor",
+  "references": ["PoseAhead.Runtime"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

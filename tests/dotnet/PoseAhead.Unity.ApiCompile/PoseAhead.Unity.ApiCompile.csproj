@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <LangVersion>9.0</LangVersion>
+    <DefineConstants>UNITY_EDITOR</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\unity\PoseAheadAvatar\Assets\PoseAhead\Scripts\**\*.cs" />
+    <Compile Include="..\..\..\unity\PoseAheadAvatar\Assets\PoseAhead\Editor\*.cs" />
+    <UnityAssemblies Include="$(UnityManagedPath)\*.dll;$(UnityManagedPath)\UnityEngine\*.dll;$(UnityManagedPath)\UnityEditor\*.dll" />
+    <Reference Include="@(UnityAssemblies)" />
+  </ItemGroup>
+  <Target Name="RequireActualUnity" BeforeTargets="PrepareForBuild">
+    <Error Condition="'$(UnityManagedPath)' == '' Or !Exists('$(UnityManagedPath)\UnityEngine')"
+           Text="Pass -p:UnityManagedPath=.../Editor/Data/Managed from the pinned Unity installation. This check uses actual API assemblies, never stubs." />
+  </Target>
+</Project>

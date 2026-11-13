@@ -1,0 +1,6 @@
+{
+  "name": "PoseAhead.Runtime",
+  "rootNamespace": "PoseAhead",
+  "references": [],
+  "autoReferenced": true
+}

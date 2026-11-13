@@ -1,0 +1,38 @@
+[project]
+name = "poseahead"
+version = "0.1.0"
+description = "Research platform for predictive latency compensation of a video-driven full-body avatar"
+authors = [
+    {name = "Skuyno"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "numpy>=1.26,<2.0",
+]
+
+[project.scripts]
+poseahead = "poseahead.cli:main"
+
+[tool.poetry]
+packages = [{include = "poseahead", from = "src"}]
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.3,<9.0"
+ruff = ">=0.12,<1.0"
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

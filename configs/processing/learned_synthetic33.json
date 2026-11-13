@@ -1,0 +1,9 @@
+{
+  "method": "learned",
+  "parameters": {
+    "checkpoint": "../../outputs/experiments/predictor_smoke_20260922/model",
+    "history_sampling": "linear_past",
+    "max_observation_gap_ms": 100,
+    "max_history_observations": 4096
+  }
+}

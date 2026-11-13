@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "run_id": "learned-synthetic33-delay33",
+  "observations": "../../outputs/experiments/predictor_smoke_20260922/synthetic_S8.npz",
+  "reference": "../../outputs/experiments/predictor_smoke_20260922/synthetic_S8.npz",
+  "processor": {
+    "method": "learned",
+    "parameters": {
+      "checkpoint": "../../outputs/experiments/predictor_smoke_20260922/model"
+    }
+  },
+  "seed": 42,
+  "delay_ms": 33,
+  "start_ns": 0,
+  "end_ns": 680000000,
+  "step_ns": 20000000,
+  "window_frames": 35,
+  "max_lag_ms": 100
+}

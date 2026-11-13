@@ -1,0 +1,9 @@
+{
+  "method": "kalman",
+  "parameters": {
+    "measurement_sigma_m": 0.025,
+    "acceleration_spectral_density": 1.0,
+    "initial_velocity_sigma_m_s": 1.0,
+    "reset_gap_ms": 250.0
+  }
+}

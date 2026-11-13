@@ -1,0 +1,46 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.vendor/
+.coverage
+htmlcov/
+
+# Local credentials and disposable package builds
+.env
+.env.*
+.secrets/
+*.pem
+*.pfx
+build/
+dist/
+
+# .NET build outputs
+**/bin/
+**/obj/
+
+# Local data and generated research artifacts
+data/
+artifacts/
+outputs/
+*.pth
+*.pt
+*.onnx
+
+# Unity-generated directories
+unity/**/Library/
+unity/**/Temp/
+unity/**/Logs/
+unity/**/obj/
+unity/**/Build/
+unity/**/Builds/
+unity/**/UserSettings/
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+numpy==1.26.4
+opencv-python==4.11.0.86
+matplotlib==3.9.4
+packaging==26.3
+torch==2.1.0+cu121
+torchvision==0.16.0+cu121
+ultralytics==8.0.145
+einops==0.8.1

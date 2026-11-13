@@ -1,0 +1,4 @@
+{
+  "method": "ema",
+  "parameters": {"time_constant_ms": 50.0, "reset_gap_ms": 250.0}
+}

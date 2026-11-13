@@ -1,0 +1,32 @@
+{
+  "method": "adaptive",
+  "parameters": {
+    "checkpoints": {
+      "33": {
+        "checkpoint": "../../outputs/cmu_stability_20260927/h33_seed42",
+        "checkpoint_sha256": "e02520b08fe624490caa8ade153d4530427464ab970f5525fcd5daedd93fdfed"
+      },
+      "66": {
+        "checkpoint": "../../outputs/cmu_stability_20260927/h66_seed42",
+        "checkpoint_sha256": "5f2119a9209b791c4688464f2c9078807834d2e02de98e8a239f65d27b92a1f1"
+      },
+      "100": {
+        "checkpoint": "../../outputs/cmu_stability_20260927/h100_seed42",
+        "checkpoint_sha256": "c4d406e0bd3e565c5d41f9a39183299e5a47b169ba818a8ef79af44f64c1f957"
+      },
+      "150": {
+        "checkpoint": "../../outputs/cmu_stability_20260927/h150_seed42",
+        "checkpoint_sha256": "f69388df3b51928b58802eca66e86c5facda216b48601710f53c42b5d0f96c54"
+      }
+    },
+    "history_sampling": "linear_past",
+    "policy": {
+      "version": 1,
+      "error_limits_m": {"33": 0.03, "66": 0.03, "100": 0.03, "150": 0.03},
+      "max_horizon_ms": 100,
+      "minimum_matured": 3,
+      "maximum_acceleration_m_s2": 20.0,
+      "mode": "horizon_blend"
+    }
+  }
+}
